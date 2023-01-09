@@ -1,1 +1,29 @@
-
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float:left
+  }
+  li {
+    display: inline;
+  }
+  nav {
+    float: left;
+    display: block;
+    color: #eaeeea;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    max-width:fit-content
+  }
+  nav:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  nav {
+    overflow: hidden;
+    background-color: rgba(5, 209, 36, 0.909)
+  }
+* {
+    box-sizing: border-box;
+  }
