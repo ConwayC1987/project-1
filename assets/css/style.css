@@ -20,13 +20,22 @@ h1, h2 {
   text-transform: uppercase;
   letter-spacing: 4px;
   color: #3a3a3a;
+  text-align:center;
 }
 
-/* logo postioning*/
+p {
+  font-size: 17px;
+  color: black;
+}
+
+/* logo postioning, shadow effect code got on https://www.w3schools.com/css/css3_shadows.asp*/
 #logo {
   float: left;
   padding-left: 2%;
   font-size: 220%;
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  letter-spacing: 10px;
 }
 
 /* Navigation Links */
@@ -48,6 +57,8 @@ h1, h2 {
   list-style-type: none;
   margin-right: 30px;
   font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
 
 #menu a {
@@ -68,4 +79,14 @@ nav {
 
 .opened {
   border-bottom: 1px solid #3a3a3a;
+}
+
+/* Hero image */
+
+#hero {
+  height: 300px;
+  width: 100%;
+  background-image: url('../images/hero.jpg');
+  
+
 }
