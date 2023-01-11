@@ -1,18 +1,71 @@
+/* Font got on https://fonts.google.com/ */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+body {
+  font-family: Lato, sans-serif;
+  font-weight: 300;
+  color: #3e3939;
+}
+
+/* Header and logo */
+
+h1, h2 {
+  font-family: Oswald,sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #3a3a3a;
+}
+
+/* logo postioning*/
+#logo {
+  float: left;
+  padding-left: 2%;
+  font-size: 220%;
+}
+
+/* Navigation Links */
+
+/* menu styling*/
+#menu {
+  font-size: 110%;
+  letter-spacing: 4px;
+}
+
+/* logo styling*/
+#menu, logo{
+  line-height: 75px;
+}
+
+/* list styling*/
+#menu li {
+  float:right;
+  list-style-type: none;
+  margin-right: 30px;
+  font-weight: bold;
+}
+
+#menu a {
+  text-decoration: none;
+  font-size: 15px;
+  color: inherit;
+  text-shadow: #3e3939;
+}
+
+#menu a:hover {
+  border-bottom: 1px solid #3a3a3a;
+}
+
 nav {
   overflow: hidden;
   background-color: rgb(124, 211, 118);
 }
 
-nav a {
-  float: left;
-  color: #2b2929;
-  text-align:left;
-  padding: 10;
-  text-decoration:none;
-  font-size: 10px;
-}
-
-nav a:hover {
-  background-color: #ddd;
-  color: black;
+.opened {
+  border-bottom: 1px solid #3a3a3a;
 }
