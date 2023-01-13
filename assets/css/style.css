@@ -26,9 +26,12 @@ h1, h2 {
 p {
   font-size: 17px;
   color: black;
+  word-spacing:3px;
+  font-weight: bold;
 }
 
-/* logo postioning, shadow effect code got on https://www.w3schools.com/css/css3_shadows.asp*/
+/* Logo postioning
+Shadow effect code got on https://www.w3schools.com/css/css3_shadows.asp*/
 #logo {
   float: left;
   padding-left: 2%;
@@ -40,18 +43,18 @@ p {
 
 /* Navigation Links */
 
-/* menu styling*/
+/* Menu styling*/
 #menu {
   font-size: 110%;
   letter-spacing: 4px;
 }
 
-/* logo styling*/
+/* Logo styling*/
 #menu, logo{
   line-height: 75px;
 }
 
-/* list styling*/
+/* List styling*/
 #menu li {
   float:right;
   list-style-type: none;
@@ -74,7 +77,7 @@ p {
 
 nav {
   overflow: hidden;
-  background-color: rgb(68, 201, 59);
+  background-color: rgb(31, 148, 22);
 }
 
 .opened {
@@ -89,4 +92,11 @@ nav {
   background-image: url('../images/hero.jpg');
   
 
+}
+
+/* Footer styling */
+footer {
+  overflow: hidden;
+  background-color: rgb(31, 148, 22);
+  text-align: center;
 }
