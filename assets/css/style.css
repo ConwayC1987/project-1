@@ -30,7 +30,7 @@ p {
   font-weight: bold;
 }
 
-/* Logo postioning
+/* Logo postioning and styling
 Shadow effect code got on https://www.w3schools.com/css/css3_shadows.asp*/
 #logo {
   float: left;
@@ -39,6 +39,8 @@ Shadow effect code got on https://www.w3schools.com/css/css3_shadows.asp*/
   color: white;
   text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
   letter-spacing: 10px;
+  line-height: 75px;
+
 }
 
 /* Navigation Links */
@@ -47,18 +49,17 @@ Shadow effect code got on https://www.w3schools.com/css/css3_shadows.asp*/
 #menu {
   font-size: 110%;
   letter-spacing: 4px;
-}
-
-/* Logo styling*/
-#menu, logo{
   line-height: 75px;
+
 }
 
 /* List styling*/
 #menu li {
   float:right;
   list-style-type: none;
-  margin-right: 30px;
+  display: block;
+  padding: 5px 14px;
+  margin-right: 10px;
   font-weight: bold;
   color: white;
   text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
@@ -80,18 +81,41 @@ nav {
   background-color: rgb(31, 148, 22);
 }
 
-.opened {
-  border-bottom: 1px solid #3a3a3a;
-}
 
 /* Hero image */
+/* Image sourced from https://answersingenesis.org/archaeology/ancient-technology/uncovering-assumptions-newgrange/*/
+
+#hero-outer {
+  height: 250px;
+  width:100%;
+  overflow: hidden;
+}
 
 #hero {
-  height: 300px;
-  width: 100%;
-  background-image: url('../images/hero.jpg');
-  
+  height: 250px;
+  width:100%;
+  background-position: center, center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-image: url('../images/Hero\ \(2\).jpg'); 
 
+  /*Creates zoom effect for hero code from running loving video */
+  animation-name:hero-zoom;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+
+/* Create a zoom effect for hero image code from loving running video*/
+
+@keyframes hero-zoom {
+  from{
+    transform: scale(1);
+  }
+  to{
+    transform: scale(1.1);
+
+  }
 }
 
 /* Footer styling */
