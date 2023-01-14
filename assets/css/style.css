@@ -19,13 +19,13 @@ h1, h2 {
   font-family: Oswald,sans-serif;
   text-transform: uppercase;
   letter-spacing: 4px;
-  color: #3a3a3a;
+  color: #5a564ff5;
   text-align:center;
 }
 
 p {
   font-size: 17px;
-  color: black;
+  color: 5a564ff5;
   word-spacing:3px;
   font-weight: bold;
 }
@@ -35,10 +35,10 @@ Shadow effect code got on https://www.w3schools.com/css/css3_shadows.asp*/
 #logo {
   float: left;
   padding-left: 2%;
-  font-size: 220%;
+  font-size: 200%;
   color: white;
-  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
-  letter-spacing: 10px;
+  text-shadow: 1px 1px 10px rgb(245, 152, 13), 0 0 25px rgb(216, 216, 220), 0 0 5px rgb(14, 152, 67);
+  letter-spacing: 2px;
   line-height: 75px;
 
 }
@@ -73,7 +73,7 @@ Shadow effect code got on https://www.w3schools.com/css/css3_shadows.asp*/
 }
 
 #menu a:hover {
-  border-bottom: 1px solid #3a3a3a;
+  border-bottom: 3px solid #3a3a3a;
 }
 
 nav {
@@ -89,6 +89,7 @@ nav {
   height: 250px;
   width:100%;
   overflow: hidden;
+  position: relative;
 }
 
 #hero {
@@ -100,13 +101,13 @@ nav {
   position: relative;
   background-image: url('../images/Hero\ \(2\).jpg'); 
 
-  /*Creates zoom effect for hero code from running loving video */
+  /*Creates zoom effect for hero, code from running loving video */
   animation-name:hero-zoom;
   animation-duration: 5s;
   animation-fill-mode: forwards;
 }
 
-/* Create a zoom effect for hero image code from loving running video*/
+/* Create a zoom effect for hero image, code from loving running video*/
 
 @keyframes hero-zoom {
   from{
@@ -118,9 +119,97 @@ nav {
   }
 }
 
+/*Text on the cover image styling*/
+
+#cover-text, #cover-text h3,h4{
+  color: white;
+  text-shadow: 1px 1px 10px rgb(43, 33, 18), 0 0 25px rgb(216, 216, 220), 0 0 5px rgb(14, 152, 67);
+  letter-spacing: 2px
+  
+}
+
+#cover-text {
+  font-size:140%;
+  font-family:Oswald,sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  width: 300px;
+  height:110px;
+  padding-top: 0px;
+  padding-left: 0px;
+  color:rgb(39, 103, 25);
+  bottom: 140px;
+  right: 0px;
+  position: absolute;
+  text-align:center;
+}
+
+/* Home page text description in 3 divs*/
+
+#description {
+  height: 600px;
+}
+
+#left-about {
+  padding-top: 30px;
+  width: 33%;
+  float: left;
+}
+
+#right-about {
+  padding-top: 30px;
+  width: 33%;
+  float: right;
+
+}
+
+#center-about {
+  padding-top: 30px;
+  width: 33%;
+  margin: 0 auto;
+
+}
+
+.left-about-heading {
+  width:80%;
+  float: right;
+  line-height: 20px;
+  clear: both;
+  margin-bottom: 10px;
+}
+
+.right-about-heading {
+  width:80%;
+  float: left;
+  line-height: 20px;
+  clear: both;
+  margin-bottom: 10px;
+}
+
+hr {
+  border-top: 1px solid #3a3a3a;
+  width: 100%;
+  margin: 5px 0;
+}
+
+#circle-container {
+  width: 300px;
+  height: 300px;
+  padding: 30px;
+  margin: 0 auto;
+}
+
+/* Gif was made by taking a youtube video https://www.youtube.com/watch?v=NTzPxx3SJ1Y&t=55s and used https://gifrun.com/ to make the gif.*/
+
+#circle-cover-gif {
+  background: url('../images/Winter_Sol.gif') no-repeat center center;
+  height: 95%;
+  border-radius: 55%;
+}
 /* Footer styling */
 footer {
   overflow: hidden;
   background-color: rgb(31, 148, 22);
   text-align: center;
 }
+
