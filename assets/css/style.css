@@ -78,7 +78,7 @@ Shadow effect code got on https://www.w3schools.com/css/css3_shadows.asp*/
 
 nav {
   overflow: hidden;
-  background-color: rgb(31, 148, 22);
+  background-color: #009A49;
 }
 
 
@@ -147,27 +147,28 @@ nav {
 /* Home page text description in 3 divs*/
 
 #description {
-  height: 600px;
+  height: 380px;
 }
 
 #left-about {
   padding-top: 30px;
   width: 33%;
   float: left;
+  height: 380px;
 }
 
 #right-about {
   padding-top: 30px;
   width: 33%;
   float: right;
-
+  height: 380px;
 }
 
 #center-about {
   padding-top: 30px;
   width: 33%;
   margin: 0 auto;
-
+  height: 380px;
 }
 
 .left-about-heading {
@@ -186,6 +187,22 @@ nav {
   margin-bottom: 10px;
 }
 
+.right-about-heading h2 {
+  text-align: right;
+}
+
+.right-about-heading p {
+  text-align: right;
+}
+
+.left-about-heading h2 {
+  text-align: left;
+}
+
+.left-about-heading p {
+  text-align: left;
+}
+
 hr {
   border-top: 1px solid #3a3a3a;
   width: 100%;
@@ -194,7 +211,7 @@ hr {
 
 #circle-container {
   width: 300px;
-  height: 300px;
+  height: 290px;
   padding: 30px;
   margin: 0 auto;
 }
@@ -203,13 +220,16 @@ hr {
 
 #circle-cover-gif {
   background: url('../images/Winter_Sol.gif') no-repeat center center;
-  height: 95%;
+  height: 100%;
   border-radius: 55%;
 }
 /* Footer styling */
 footer {
-  overflow: hidden;
-  background-color: rgb(31, 148, 22);
-  text-align: center;
+  background-color:#FF7900;text-align:center;padding:10px;margin-top:7px;
 }
 
+footer ul li {
+  display: inline;
+  text-align:center;padding:10px;margin-top:7px;
+
+}
