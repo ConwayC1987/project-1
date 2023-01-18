@@ -35,41 +35,74 @@ Shadow effect code got on https://www.w3schools.com/css/css3_shadows.asp*/
 #logo {
   float: left;
   padding-left: 2%;
-  font-size: 200%;
+  font-size: 35px;
   color: white;
   text-shadow: 1px 1px 10px rgb(245, 152, 13), 0 0 25px rgb(216, 216, 220), 0 0 5px rgb(14, 152, 67);
   letter-spacing: 2px;
   line-height: 75px;
-
 }
 
 /* Navigation Links */
 
-/* Menu styling*/
+/* Style the header with a grey background and some padding */
+* {box-sizing: border-box;}
+
 #menu {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 20px 10px;
   font-size: 110%;
   letter-spacing: 4px;
-  line-height: 75px;
-
 }
 
-/* List styling*/
+/* Style the header links */
 #menu li {
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
   float:right;
   list-style-type: none;
   display: block;
-  padding: 5px 14px;
+  padding: 5px 10px;
   margin-right: 10px;
   font-weight: bold;
   color: white;
   text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
 
+/* Change the background color on mouse-over */
+#menu a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active/current link*/
+#menu a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+  #menu a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  #nav {
+    float: none;
+  }
+}
+
+
+
 #menu a {
-  text-decoration: none;
+  
   font-size: 15px;
   color: inherit;
-  text-shadow: #3e3939;
+  
 }
 
 #menu a:hover {
@@ -80,7 +113,6 @@ nav {
   overflow: hidden;
   background-color: #009A49;
 }
-
 
 /* Hero image */
 /* Image sourced from https://answersingenesis.org/archaeology/ancient-technology/uncovering-assumptions-newgrange/*/
@@ -124,8 +156,7 @@ nav {
 #cover-text, #cover-text h3,h4{
   color: white;
   text-shadow: 1px 1px 10px rgb(43, 33, 18), 0 0 25px rgb(216, 216, 220), 0 0 5px rgb(14, 152, 67);
-  letter-spacing: 2px
-  
+  letter-spacing: 2px 
 }
 
 #cover-text {
@@ -165,7 +196,7 @@ nav {
 }
 
 #center-about {
-  padding-top: 0px;
+  padding-top: 30px;
   width: 33%;
   margin: 0 auto;
   height: 380px;
@@ -203,6 +234,7 @@ nav {
   text-align: left;
 }
 
+/*Line under the headings*/
 hr {
   border-top: 1px solid #3a3a3a;
   width: 100%;
@@ -210,27 +242,27 @@ hr {
 }
 
 #circle-container {
-  width: 300px;
-  height: 290px;
-  padding: 10px;
+  width: 380px;
+  height: 380px;
+  padding: 5px;
   margin: 0 auto;
 }
 
 /* Gif was made by taking a youtube video https://www.youtube.com/watch?v=NTzPxx3SJ1Y&t=55s and used https://gifrun.com/ to make the gif.*/
 
 #circle-cover-gif {
-  background: url('../images/Winter_Sol.gif') no-repeat center center;
-  height: 100%;
-  border-radius: 55%;
+  background: url('../images/sun_rise.gif') no-repeat center;
+  height: 50%;
+  
 }
+
 /* Footer styling */
+
 footer {
   background-color:#FF7900;text-align:center;
-  height: 100px;
+  height: 120px;
   width: 100%;
-  position: fixed;
   bottom: 0;
-   
 }
 
 footer li {
@@ -246,15 +278,17 @@ footer i {
 
 /*Second page*/
 /*Introduction div stying*/
+#intro {
+  padding:1%;
+}
 
-
-div.gallery {
+div.images {
   border: 1px solid rgb(39, 103, 25);
 }
 
-div.gallery img {
+div.images img {
   width: 100%;
-  height: 250px;
+  height: 300px;
 }
 
 div.desc {
@@ -266,7 +300,7 @@ div.desc {
   box-sizing: border-box;
 }
 
-.responsive {
+.its-history {
   padding: 0 6px;
   float: left;
   width: 50%;
